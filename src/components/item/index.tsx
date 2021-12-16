@@ -13,10 +13,11 @@ const Item: React.FC<Props> = ({item, handleAddItem}) => (
     <Wrapper> 
         <img src={item.image} alt={item.title} />
         <div>
+            {console.log(item)}
             <h2>
                 {item.title}
             </h2>
-            <p>{item.desciption}</p>
+            <p>{item.description}</p>
             <h3>${item.price}</h3> 
             <Button onClick={() => handleAddItem(item)} >Add to cart </Button>
         </div>

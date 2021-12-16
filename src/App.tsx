@@ -12,7 +12,7 @@ import Item from './components/item/index';
 export type CartItemType = {
   id: number;
   category: string;
-  desciption: string;
+  description: string;
   image: string;
   price: number;
   title: string;
